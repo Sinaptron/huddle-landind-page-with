@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magneta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--violet) url("../images/bg-mobile.svg") no-repeat;
+    background-size: contain;  
+    display: grid;
+    place-items: center;
+}
+
+.contenedor {
+    width: 86%;
+    margin: 10% auto;
+
+
+}
+
+.tarjeta #logotipo {
+    width: 42%;
+    margin-bottom: 16%;
+}
+
+.tarjeta #imagen {
+    width: 98%;
+}
+
+section {
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+}
+
+section h2 {
+    line-height: 40px;
+}
+
+section p {
+    margin-top: 9%;
+    line-height: 25px;
+    padding: 0 3%;
+}
+
+section button {    
+    color: var(--violet);
+    box-shadow: 0 2px 4px 0 rgb(58, 58, 58);
+    transition: 0.2s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    border: none;
+    margin-top: 10%;
+    width: 65%;
+    padding: 4% 0;
+    border-radius: 20px;
+}
+
+section button:hover {
+    background: var(--magneta);
+    transition: 0.2s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+}
+
+.redes-sociales {
+    margin-top: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales a {
+
+    border: 1px solid #fff;
+    margin: 0 3%;
+    padding: 3% 3.5%;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    transition: 0.2s ease-in-out;
+}
+
+.redes-sociales a:hover {
+
+    color: var(--magneta);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border: 1px solid var(--magneta);
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background: var(--violet) url("../images/bg-desktop.svg") no-repeat;
+        background-size: contain;
+        min-height: 100vh;     
+    }
+    
+    .contenedor {
+        
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+    }
+
+    .redes-sociales {
+        top: 18rem;
+        right: 11rem;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .redes-sociales a {
+    font-size: 1.5rem;
+    margin: 0 15%;
+    padding: 15% 20%; 
+}
+    
+    .redes-sociales a:nth-child(1) {    
+        padding: 15% 25%;
+    }
+
+    .tarjeta #logotipo {
+        width: 40%;
+    }
+
+    .tarjeta #imagen {
+    width: 150%;
+    }
+
+    section {
+    margin-top: 0;
+    text-align: left;
+    margin-left: 18%;
+    }
+
+    section h2 {
+        font-size: 3rem;
+        line-height: 70px;
+        margin-right: 15%;
+    }
+
+    section p {
+        font-size: 22px;
+        margin-right: 5%;
+        margin-top: 4%;
+        line-height: 32px;    }
+
+    section button {
+        width: 30%;
+        font-size: 20px;
+        margin-top: 5%;
+        padding: 2.5% 0;
+        border-radius: 30px;
+        box-shadow: 0 2px 4px 1px rgb(58, 58, 58);
+    }
+}
